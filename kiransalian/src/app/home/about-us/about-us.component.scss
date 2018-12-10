@@ -3,6 +3,9 @@
 .about-me {
     background-color: $backgroundBlue;
     display: flex;
+        @include media-breakpoint-down(sm) {
+            display: block;
+         }
     .left-heading {
         z-index: 0;
         width: 188px;
@@ -17,6 +20,15 @@
             margin-bottom: 35px;
             font-weight: 800;
         font-family: $font-family-bold;
+        @include media-breakpoint-down(md){
+            font-size: 38px;
+            line-height: 38px;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
         }
         .section-heading {  
             font-size: 55px;
@@ -31,17 +43,57 @@
             letter-spacing: 0.1em;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+            @include media-breakpoint-down(md){
+                font-size: 38px;
+                line-height: 38px;
+                top: 150px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 38px;
+                line-height: 38px;
+                left: inherit;
+                position: inherit;
+                top: inherit;
+                text-align: center;
+                width: auto;
+                -webkit-transform: initial;
+                transform: initial;
+            }
+            @include media-breakpoint-down(xs) {
+                font-size: 30px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            position: inherit;
+            width: 100%;
+            min-height: auto;
+            height: inherit;
+            overflow: inherit;
+            padding: 20px 0;
+            margin-bottom: 45px;
         }
 
     }
     .details {
         padding: 120px 30px 0 30px;
+        @include media-breakpoint-down(md) {
+            padding: 80px 30px 0 30px;
+         }
+        @include media-breakpoint-down(sm) {
+            padding: 0 20px;
+         }
         .name {
             color: $white;
             font-family: $font-family-bold;
             letter-spacing: 2px;
             position: relative;
             padding-bottom: 25px;
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+             }
+             @include media-breakpoint-down(xs) {
+                font-size: 22px;
+            }
         }
         .name::after {
             position: absolute;
@@ -53,6 +105,11 @@
             right: 0;
             margin: 0 auto;
             background:  $white;
+        }
+        .desc {
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+             }
         }
         .about-img{
             .profile-pic {
@@ -96,13 +153,14 @@
         right: 0;
         top: 0;
     }
-      .personal-info-disc {
+      .personal-info-desc {
+          font-size: 14px;
         padding-left: 100px;
         display: block;
     }
         }
         .resume-desc {
-            
+            font-size: 14px;
     line-height: 24px;
     margin-bottom: 30px;
     letter-spacing: 1.2px;
@@ -131,6 +189,12 @@
             position: relative;
             opacity: 0.25;
             text-align: right;
+            @include media-breakpoint-down(md){
+                font-size: 55px;
+            }
+            @include media-breakpoint-down(xs) {
+                font-size: 35px;
+            }
         }
     }
 

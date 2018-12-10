@@ -7,8 +7,7 @@ import { enableProdMode } from '@angular/core';
 
 import * as express from 'express';
 import { join } from 'path';
-import * as fs from 'fs';
-// import { readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 
 // Import module map for lazy loading
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
