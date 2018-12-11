@@ -1,0 +1,93 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/common.scss';
+.skills {
+    background-color: $buttonyellow;
+    display: flex;
+        @include media-breakpoint-down(sm) {
+            display: block;
+         }
+
+         .details {
+            padding: 120px 30px 0 30px;
+            @include media-breakpoint-down(md) {
+                padding: 80px 30px 0 30px;
+             }
+            @include media-breakpoint-down(sm) {
+                padding: 0 20px;
+             }
+             .mission-label {
+                letter-spacing: 2px;
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 20px;
+                font-family: $font-family-bold;
+                
+             }
+            .mission {
+                color: $white;
+                font-family: $font-family-bold;
+                letter-spacing: 2px;
+                position: relative;
+                padding-bottom: 25px;
+                margin-bottom: 50px;
+                @include media-breakpoint-down(md) {
+                    font-size: 24px;
+                 }
+                 @include media-breakpoint-down(xs) {
+                    font-size: 22px;
+                }
+            }
+            .mission::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                width: 63px;
+                height: 3px;
+                right: 0;
+                margin: 0 auto;
+                background:  $white;
+            }
+            .label-heading {
+                letter-spacing: 2px;
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 35px;
+                font-family: $font-family-bold;   
+                @include media-breakpoint-down(xs) {
+                    font-size: 16px;
+                }
+            }
+            .label-heading::after {
+                position: absolute;
+                content: "";
+                left: 15px;
+                top: 35px;
+                bottom: 0;
+                width: 47px;
+                height: 2px;
+                background: #fff;
+            }
+            .edu-info {
+                margin-bottom: 30px;
+                @include media-breakpoint-down(xs) {
+                    font-size: 14px;
+                }
+            }
+
+            .progress-info {
+                .progress {
+                background: #fff;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                height: 8px;
+                .progress-bar {
+                    background-color: #516abc;
+                }
+                }
+                .progress-label{
+                    font-size: 14px;
+                }
+            }
+        }
+        }
