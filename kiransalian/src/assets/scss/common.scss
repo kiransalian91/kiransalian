@@ -19,10 +19,27 @@ body {
   height: 100%;
 }
 
+body * {
+    outline: none;
+  }
+  
 p {
   line-height: 24px;
   letter-spacing: 1.2px;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $white;
+  }
 
 .left-heading {
   z-index: 0;
@@ -101,7 +118,7 @@ p {
   position: relative;
   opacity: 0.25;
   text-align: right;
-  padding-bottom: 15px;
+margin: 0;
   @include media-breakpoint-down(md){
       font-size: 55px;
   }

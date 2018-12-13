@@ -1,0 +1,123 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/common.scss';
+.contact-us {
+    background-color: $backgroundBlue;
+    display: flex;
+        @include media-breakpoint-down(sm) {
+            display: block;
+         }
+    .details {
+        padding: 120px 30px 0 30px;
+        @include media-breakpoint-down(md) {
+            padding: 80px 30px 0 30px;
+         }
+        @include media-breakpoint-down(sm) {
+            padding: 0 20px;
+         }
+        .name {
+            color: $white;
+            font-family: $font-family-bold;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 25px;
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+             }
+             @include media-breakpoint-down(xs) {
+                font-size: 22px;
+            }
+        }
+        .name::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 63px;
+            height: 3px;
+            right: 0;
+            margin: 0 auto;
+            background:  $white;
+        }
+        .contact-col {
+            padding: 50px 0;
+        }
+        .contact-heading {
+            font-size: 20px;
+            font-family: $font-family-bold;
+            letter-spacing: 2px;
+            padding-bottom: 20px;
+        }
+        .contact-heading::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 100px;
+            right: 0;
+            width: 47px;
+            height: 2px;
+            margin: 0 auto;
+            background: $white;
+        }
+        .contact-desc {
+            font-size: 14px;
+            margin-top: 25px;
+        }
+        .leave-message {
+            color: $white;
+            font-family: $font-family-bold;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 25px;
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+             }
+             @include media-breakpoint-down(xs) {
+                font-size: 22px;
+            }
+        }
+        .leave-message::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 63px;
+            height: 3px;
+            margin: 0 auto;
+            background:  $white;
+        }
+        .contact-form {
+            padding-top: 30px;
+            .contact-field {
+                display: block;
+                width: 100%;
+                height: 40px;
+                margin-bottom: 30px;
+                background: none;
+                border: none;
+                border-bottom: $white 1px solid;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                color: $white;
+                padding: 0 15px;
+            }
+            .submit-button {
+                width: 100%;
+                border: none;
+                color: $backgroundBlue;
+                font-family: $font-family-bold;
+                padding: 0 16px;
+                height: 44px;
+                font-weight: bold;
+                background-color: $white;
+                cursor: pointer;
+            }
+        }
+        agm-map {
+            height: 300px;
+          }
+          .page-name{
+            padding-top: 50px;
+          }
+    }
+}

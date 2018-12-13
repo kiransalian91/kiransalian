@@ -28,9 +28,12 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/wowjs/css/libs/animate.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/wowjs/dist/wow.js"
+            ]
           },
           "configurations": {
             "production": {
