@@ -5,6 +5,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HeaderComponent } from './header/header.component';
 // import { SharedModule } from '../shared/shared.module';
 
 
@@ -14,6 +15,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     CommonModule,
     AppRoutingModule
   ],
-  declarations: [routingComponents, AboutUsComponent, SkillsComponent, ServicesComponent, ContactUsComponent]
+  declarations: [routingComponents, AboutUsComponent, SkillsComponent, ServicesComponent, ContactUsComponent, HeaderComponent]
 })
 export class HomeModule { }

@@ -1,26 +1,33 @@
-<div class="home">
-    <div class="outer-menu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+<div class="" [ngClass]="(showMenu)?'shrink':'close-shrink'">
+  <div class="home">
+    <div class="outer-menu" (click)="openMenu()" *ngIf="!showMenu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-    <div class="logo">
-        <img src="assets/images/logo-white.png">
+    <div class="close-icon" *ngIf="showMenu" (click)="openMenu()">
+
     </div>
+    <!-- <div class="logo">
+      <img src="assets/images/logo-white.png">
+    </div> -->
     <div class="banner">
-        <div class="banner-text">
-            <div class="creative-text">We are Creative</div>
-            <h1 class="header-label">WEBSITE DEVELOPER</h1>
-            <p class="sub-label"> the ultimate one page design</p>
-            <button type="button" class="btn btn-light get-in-touch">GET IN TOUCH</button>
-        </div>
-        <div class="go-to">
-            <img src="assets/images/down-arrow.png">
-        </div>
+      <div class="banner-text">
+        <div class="creative-text">We are Creative</div>
+        <h1 class="wow fadeInRight header-label">WEBSITE DEVELOPER</h1>
+        <p class="sub-label wow fadeIn" data-wow-delay="0.5s"> the ultimate one page design</p>
+        <button type="button" class="btn btn-light get-in-touch wow fadeInUp" data-wow-delay="0.6s">GET IN TOUCH</button>
+      </div>
+      <div class="go-to">
+        <img src="assets/images/down-arrow.png">
+      </div>
     </div>
- 
+
+  </div>
+
+  <app-about-us></app-about-us>
+  <app-skills></app-skills>
+  <app-services></app-services>
+  <app-contact-us></app-contact-us>
+  <app-header *ngIf="showMenu"></app-header>
 </div>
-<app-about-us></app-about-us>
-<app-skills></app-skills>
-<app-services></app-services>
-<app-contact-us></app-contact-us>

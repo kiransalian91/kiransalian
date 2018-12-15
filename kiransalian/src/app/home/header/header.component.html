@@ -1,0 +1,33 @@
+<header class="side-bar active">
+  <div class="header-inner">
+
+    <div class="navbar-header active">
+      <a class="navbar-brand " href="#header_banner" title="exalt logo">
+        <img class="logo-icon" src="assets/images/logo.png" alt="exalt">
+        <span class="logo-text">Kiran Salian</span>
+        <span class="logo-tagline">professional web developer </span>
+      </a>
+    </div><!-- navbar-header -->
+      <ul class="menu">
+        <li [ngClass]="(activeLink == 'home')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink == 'home')?'active':''" title="Home" (click)="goToPage('home')">Home</span></li>
+        <li [ngClass]="(activeLink == 'aboutme')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'aboutme')?'active':''" title="About Me" (click)="goToPage('aboutme')">About Me</span></li>
+        <li [ngClass]="(activeLink == 'specialization')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'specialization') ?'active':''" title="Specialization" (click)="goToPage('specialization')">Specialization</span></li>
+        <li [ngClass]="(activeLink == 'services')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'services')? 'active':''" title="Services" (click)="goToPage('services')">Services</span></li>
+        <li [ngClass]="(activeLink == 'contact')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'contact')?'active':''" title="Contact" (click)="goToPage('contact')">Contact</span></li>
+      </ul>
+      
+    <div class="footer">
+      <p class="copyright-txt">© 2018 Kiran Salian - All Rights Reserved</p><!-- footer-copyright -->
+      <div class="footer-social">
+        <ul class="list-inline">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-skype"></i></a></li>
+          <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+      <!-- footer-social -->
+    </div><!-- salmond-sidebar-menu-footer -->
+  </div><!-- header-inner -->
+</header>

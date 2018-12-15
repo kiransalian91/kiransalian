@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  showMenu: Boolean = false;
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  openMenu() {
+    if (this.showMenu) {
+      this.showMenu = false;
+    } else {
+      this.showMenu = true;
+    }
 
   }
 

@@ -1,153 +1,248 @@
 @import '../../assets/scss/variables.scss';
 @import '../../assets/scss/common.scss';
-.home{
-    .outer-menu {
-        font-size: 24px;
-        color: $white;
-        position: absolute;
-        top: 0px;
-        width: 50px;
-        height: 50px;
-        padding-top: 10px;
-        background-color: #fd225f;
-        cursor: pointer;
-        transition: all 0.3s;
-        z-index: 100000;
-        .line {
-            width: 25px;
-            height: 3px;
-            background-color: $white;
-            margin: 5px auto;
-        }
+
+.shrink {
+  @include media-breakpoint-up(xl) {
+    padding-left: 300px;
+    width: 100%;
+    transition: all 0.3s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+}
+
+.close-shrink {
+  @include media-breakpoint-up(xl) {
+    padding-left: 0;
+    transition: all 0.3s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+.home {
+  .outer-menu {
+    font-size: 24px;
+    color: $white;
+    position: absolute;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    background-color: #fd225f;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 100000;
+
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color: $white;
+      margin: 5px auto;
     }
-    .outer-menu:hover {
-        background-color: $buttonyellow;
+  }
+
+  .outer-menu:hover {
+    background-color: $buttonyellow;
+  }
+
+  .close-icon {
+    font-size: 24px;
+    color: $white;
+    position: absolute;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    background-color: #fd225f;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 100000;
+
+    @include media-breakpoint-down(xl) {
+      left: 250px;
     }
-    .logo {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        width: 45px;
-        z-index: 99;
-        img {
-        max-width : 100%;
-        }
+
+    @include media-breakpoint-down(sm) {
+      left: 220px;
+      width: 40px;
+      height: 40px;
     }
-	.banner {
-        background: url('/assets/images/main-banner.jpg') no-repeat;
+  }
+
+  .close-icon:before,
+  .close-icon:after {
+    position: absolute;
+    left: 24px;
+    top: 11px;
+    content: ' ';
+    height: 26px;
+    width: 4px;
+    background-color: #FFFFFF;
+
+    @include media-breakpoint-down(sm) {
+      left: 19px;
+      top: 7px;
+    }
+  }
+
+  .close-icon:before {
+    transform: rotate(45deg);
+  }
+
+  .close-icon:after {
+    transform: rotate(-45deg);
+  }
+
+  .close-icon:hover {
+    background-color: $buttonyellow;
+  }
+
+
+  .logo {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 45px;
+    z-index: 99;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .banner {
+    background: url('/assets/images/main-banner.jpg') no-repeat;
     background-size: cover;
-        width: 100%;
+    width: 100%;
     height: 100vh;
     background-position: center center;
     position: relative;
     overflow: hidden;
-    }
-    .banner::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(16,13,67,0.65);
-    }
-    .banner-text {
-        position: absolute;
+  }
+
+  .banner::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 13, 67, 0.65);
+  }
+
+  .banner-text {
+    position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     left: 0;
     right: 0;
     margin: 0 auto;
     z-index: 99;
     text-align: center;
+
     .creative-text {
-        font-size: 45px;
-        line-height: 45px;
-        font-weight: 200;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-        color: $white;
-        font-family: $font-family-light;
-        @include media-breakpoint-down(lg) {
-            font-size: 38px;
-        }
-        @include media-breakpoint-down(md) {
-            font-size: 28px;
-        }
-        @include media-breakpoint-down(xs) {
-            font-size: 22px;
-         }
-        
-    }
-    .header-label {
-        font-size: 62px;
-        color: $white;
-        font-family: $font-family-bold;
-        line-height: 62px;
-        letter-spacing: 3px;
-        font-weight: 800;
-        @include media-breakpoint-down(lg) {
-            font-size: 50px;
-        }
-        @include media-breakpoint-down(sm) {
-           font-size: 40px;
-           line-height: 40px;
-        } 
-        @include media-breakpoint-down(xs) {
-            font-size: 25px;
-         }
+      font-size: 45px;
+      line-height: 45px;
+      font-weight: 200;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      color: $white;
+      font-family: $font-family-light;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 38px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 28px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 22px;
+      }
 
     }
+
+    .header-label {
+      font-size: 62px;
+      color: $white;
+      font-family: $font-family-bold;
+      line-height: 62px;
+      letter-spacing: 3px;
+      font-weight: 800;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 50px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 25px;
+      }
+
+    }
+
     .sub-label {
-        font-weight: 200;
-        margin-bottom: 30px;
-        font-size: 24px;
-        font-family: $font-family-light;
-        line-height: 24px;
-        color: $white;
-        letter-spacing: 1.2px;
-        @include media-breakpoint-down(sm) {
-            font-size: 16px;
-         }
+      font-weight: 200;
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-family: $font-family-light;
+      line-height: 24px;
+      color: $white;
+      letter-spacing: 1.2px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
     }
+
     .get-in-touch {
-        background-color: $buttonyellow;
-    color: $white;
-    font-size: 18px;
-    line-height: 18px;
-    border: none;
-    letter-spacing: 2px;
-    padding: 13px 15px;
-    border-radius: 0;
-    transition: 0.3s;
-    box-shadow: none;
+      background-color: $buttonyellow;
+      color: $white;
+      font-size: 18px;
+      line-height: 18px;
+      border: none;
+      letter-spacing: 2px;
+      padding: 13px 15px;
+      border-radius: 0;
+      transition: 0.3s;
+      box-shadow: none;
     }
+
     .get-in-touch:hover {
-        background-color: $hovergreen;
-        color: $white;
+      background-color: $hovergreen;
+      color: $white;
     }
+  }
+
+  .go-to {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $buttonyellow;
+    width: 62px;
+    cursor: pointer;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    font-size: 24px;
+    color: $white;
+    transition: 0.3s;
+    z-index: 9999;
+
+    img {
+      width: 30px;
+      height: 25px;
     }
-    .go-to {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background: $buttonyellow;
-        width: 62px;
-        cursor: pointer;
-        height: 62px;
-        line-height: 62px;
-        text-align: center;
-        font-size: 24px;
-        color: $white;
-        transition: 0.3s;
-        z-index: 9999;
-        
-        img {
-            width: 30px;
-            height: 25px;
-        }
-    }
-    .go-to:hover {
-        background-color: $hovergreen;
-    }
+  }
+
+  .go-to:hover {
+    background-color: $hovergreen;
+  }
 }
