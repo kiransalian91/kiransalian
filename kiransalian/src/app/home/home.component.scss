@@ -246,3 +246,499 @@
     background-color: $hovergreen;
   }
 }
+
+
+
+// about us
+
+.about-me {
+  background-color: $backgroundBlue;
+  display: flex;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
+  .details {
+    padding: 120px 30px 0 30px;
+
+    @include media-breakpoint-down(md) {
+      padding: 80px 30px 0 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 20px;
+    }
+
+    .name {
+      color: $white;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 25px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 22px;
+      }
+    }
+
+    .name::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 63px;
+      height: 3px;
+      right: 0;
+      margin: 0 auto;
+      background: $white;
+    }
+
+    .desc {
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+      }
+    }
+
+    .about-img {
+      .profile-pic {
+        max-width: 100%;
+        position: relative;
+        border: $white 10px solid;
+      }
+    }
+
+    .personal-info-label {
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .personal-info-label::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 47px;
+      height: 1px;
+      background: $white;
+    }
+
+    .personal-info {
+
+      margin-bottom: 26px;
+
+      .personal-info-title {
+        font-family: $font-family-bold;
+        width: 80px;
+        float: left;
+        font-weight: 800;
+        padding-right: 10px;
+        position: relative;
+        display: block;
+      }
+
+      .personal-info-title:after {
+        content: ":";
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .personal-info-desc {
+        font-size: 14px;
+        padding-left: 100px;
+        display: block;
+      }
+    }
+
+    .resume-desc {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      letter-spacing: 1.2px;
+    }
+
+    .download {
+      background-color: $buttonyellow;
+      color: $white;
+      font-size: 18px;
+      line-height: 18px;
+      border: none;
+      letter-spacing: 2px;
+      padding: 13px 15px;
+      border-radius: 0;
+      transition: 0.3s;
+      box-shadow: none;
+    }
+
+    .download:hover {
+      background-color: $hovergreen;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// my skills
+
+.skills {
+  background-color: $buttonyellow;
+  display: flex;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
+  .details {
+    padding: 120px 30px 0 30px;
+
+    @include media-breakpoint-down(md) {
+      padding: 80px 30px 0 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 20px;
+    }
+
+    .mission-label {
+      letter-spacing: 2px;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      font-family: $font-family-bold;
+
+    }
+
+    .mission {
+      color: $white;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 25px;
+      margin-bottom: 50px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 22px;
+      }
+    }
+
+    .mission::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 63px;
+      height: 3px;
+      right: 0;
+      margin: 0 auto;
+      background: $white;
+    }
+
+    .label-heading {
+      letter-spacing: 2px;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 35px;
+      font-family: $font-family-bold;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 16px;
+      }
+    }
+
+    .label-heading::after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: 35px;
+      bottom: 0;
+      width: 47px;
+      height: 2px;
+      background: #fff;
+    }
+
+    .edu-info {
+      margin-bottom: 30px;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 14px;
+      }
+    }
+
+    .progress-info {
+      .progress {
+        background: #fff;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        height: 8px;
+
+        .progress-bar {
+          background-color: #516abc;
+        }
+      }
+
+      .progress-label {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+// services
+
+.services {
+  background-color: $backgroundpink;
+  display: flex;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
+  .details {
+    padding: 120px 30px 0 30px;
+
+    @include media-breakpoint-down(md) {
+      padding: 80px 30px 0 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 20px;
+    }
+
+    .what-can-i-do {
+      color: $white;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 25px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 22px;
+      }
+    }
+
+    .what-can-i-do::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 63px;
+      height: 3px;
+      right: 0;
+      margin: 0 auto;
+      background: $white;
+    }
+
+    .service-col {
+      padding: 50px 0;
+
+      @include media-breakpoint-down(xs) {
+        padding: 20px 0;
+      }
+    }
+
+    .service-heading {
+      font-size: 20px;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      padding-bottom: 20px;
+    }
+
+    .service-heading::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 100px;
+      right: 0;
+      width: 47px;
+      height: 2px;
+      margin: 0 auto;
+      background: $white;
+
+      @include media-breakpoint-down(xs) {
+        top: 65px;
+      }
+    }
+
+    .service-desc {
+      font-size: 14px;
+      margin-top: 25px;
+    }
+
+    .services-info {
+      margin-bottom: 25px !important;
+    }
+  }
+}
+
+// contact us
+
+.contact-us {
+  background-color: $backgroundBlue;
+  display: flex;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
+  .details {
+    padding: 120px 30px 0 30px;
+
+    @include media-breakpoint-down(md) {
+      padding: 80px 30px 0 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 20px;
+    }
+
+    .name {
+      color: $white;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 25px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 22px;
+      }
+    }
+
+    .name::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 63px;
+      height: 3px;
+      right: 0;
+      margin: 0 auto;
+      background: $white;
+    }
+
+    .contact-col {
+      padding: 50px 0;
+
+      @include media-breakpoint-down(xs) {
+        padding: 20px 0;
+      }
+    }
+
+    .contact-heading {
+      font-size: 20px;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      padding-bottom: 20px;
+    }
+
+    .contact-heading::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 100px;
+      right: 0;
+      width: 47px;
+      height: 2px;
+      margin: 0 auto;
+      background: $white;
+
+      @include media-breakpoint-down(xs) {
+        top: 65px;
+      }
+    }
+
+    .contact-desc {
+      font-size: 14px;
+      margin-top: 25px;
+    }
+
+    .leave-message {
+      color: $white;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 25px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 22px;
+      }
+    }
+
+    .leave-message::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 63px;
+      height: 3px;
+      margin: 0 auto;
+      background: $white;
+    }
+
+    .contact-form {
+      padding-top: 30px;
+
+      .contact-field {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 30px;
+        background: none;
+        border: none;
+        border-bottom: $white 1px solid;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        color: $white;
+        padding: 0 15px;
+      }
+
+      .submit-button {
+        width: 100%;
+        border: none;
+        color: $backgroundBlue;
+        font-family: $font-family-bold;
+        padding: 0 16px;
+        height: 44px;
+        font-weight: bold;
+        background-color: $white;
+        cursor: pointer;
+      }
+    }
+
+    agm-map {
+      height: 300px;
+    }
+
+    .page-name {
+      padding-top: 50px;
+    }
+  }
+
+}

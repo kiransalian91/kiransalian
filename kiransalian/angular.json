@@ -28,11 +28,11 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/animate.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/animate.css/animate.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "src/assets/libs/wow.min.js"
+              "node_modules/wowjs/dist/wow.js"
             ]
           },
           "configurations": {

@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-
 import {LoggerService  } from './services/logger.service';
+import { ScrollToModule } from 'ng2-scroll-to-el';
 @NgModule({
   declarations: [
 
@@ -11,12 +11,14 @@ import {LoggerService  } from './services/logger.service';
   imports: [
   CommonModule,
   RouterModule,
-  HttpClientModule
+  HttpClientModule,
+  ScrollToModule
   ],
 
   exports: [
   RouterModule,
-  HttpClientModule
+  HttpClientModule,
+  ScrollToModule
   ],
 
   providers: [LoggerService]

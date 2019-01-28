@@ -27,11 +27,12 @@
       width: 100%;
     }
 
-    .logo-icon {
+    .profile-image {
       width: 105px;
+      border-radius: 50%;
     }
 
-    .logo-tagline {
+    .user-tagline {
       font-family: $font-family-semibold;
       display: block;
       font-size: 12px;
@@ -45,13 +46,16 @@
       }
     }
 
-    .logo-text {
+    .user-text {
       font-family: $font-family-bold;
       display: block;
-      font-size: 28x;
+      font-size: 28px;
       line-height: 36px;
       letter-spacing: 6px;
-      margin-bottom: 5px;
+      margin: 10px 0 5px 0;
+      @include media-breakpoint-down(xs) {
+        font-size: 23px;
+      }
     }
 
     .navbar-brand {
@@ -120,6 +124,9 @@
       transition: 0.3s;
     }
 
+    .menu-list:before:hover {
+      background: #ff9900;
+    }
     .activeli:before {
       background: #ff9900;
     }

@@ -27,6 +27,9 @@ p {
   line-height: 24px;
   letter-spacing: 1.2px;
 }
+.wow {
+    visibility: visible !important;
+ }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $white;
