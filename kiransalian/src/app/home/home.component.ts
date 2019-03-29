@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { WOW } from 'wowjs/dist/wow';
-import { ScrollToService } from 'ng2-scroll-to-el';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

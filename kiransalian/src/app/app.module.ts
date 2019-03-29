@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
+// import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import 'rxjs/add/observable/of';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/code.module';
-import { ScrollToModule } from 'ng2-scroll-to-el';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ScrollToModule } from 'ng2-scroll-to-el';
     AppRoutingModule,
     CoreModule,
     ScrollToModule.forRoot(),
+
     AgmCoreModule.forRoot({
       apiKey: ''
     }),

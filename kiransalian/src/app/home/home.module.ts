@@ -6,6 +6,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './header/header.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 // import { SharedModule } from '../shared/shared.module';
 
 
@@ -13,8 +14,10 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollToModule.forRoot(),
   ],
-  declarations: [routingComponents, AboutUsComponent, SkillsComponent, ServicesComponent, ContactUsComponent, HeaderComponent]
+  declarations: [routingComponents, AboutUsComponent, SkillsComponent, ServicesComponent, ContactUsComponent, HeaderComponent],
+
 })
 export class HomeModule { }
