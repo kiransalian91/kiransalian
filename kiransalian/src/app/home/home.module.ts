@@ -7,6 +7,8 @@ import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './header/header.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { AgmCoreModule } from '@agm/core';
+
 // import { SharedModule } from '../shared/shared.module';
 
 
@@ -16,6 +18,9 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     CommonModule,
     AppRoutingModule,
     ScrollToModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCPmUVbuHXlz3UFpfVP_E4srgH_vLP4XTU'
+    }),
   ],
   declarations: [routingComponents, AboutUsComponent, SkillsComponent, ServicesComponent, ContactUsComponent, HeaderComponent],
 

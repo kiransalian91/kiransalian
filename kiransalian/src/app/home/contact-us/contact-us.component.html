@@ -1,5 +1,11 @@
 <div class="contact-us">
-
+  <div class="outer-menu" (click)="openMenu()" *ngIf="!showMenu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="close-icon" *ngIf="showMenu" (click)="openMenu()">
+  </div>
   <div class="left-heading">
 
     <div class="section-number">#04</div>
@@ -48,14 +54,14 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-5 pt-3">
         <div class=" wow fadeInUp">
-          <!-- <agm-map [latitude]="lat" [longitude]="lng">
-            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-          </agm-map> -->
+            <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+              </agm-map>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-7 pt-3">
         <div class=" wow fadeInUp">
           <h2 class="heading-border leave-message">LEAVE A MESSAGE</h2>
           <div class="contact-form">
@@ -79,4 +85,5 @@
       </div>
     </div>
     <h2 class="page-name">CONTACT</h2>
+    <app-header *ngIf="showMenu"></app-header>
   </div>

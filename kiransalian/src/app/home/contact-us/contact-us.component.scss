@@ -4,9 +4,15 @@
 .contact-us {
   background-color: $backgroundBlue;
   display: flex;
+  min-height: 100%;
+
 
   @include media-breakpoint-down(sm) {
     display: block;
+  }
+
+  agm-map {
+    height: 420px;
   }
 
   .details {
@@ -138,10 +144,6 @@
         background-color: $white;
         cursor: pointer;
       }
-    }
-
-    agm-map {
-      height: 300px;
     }
 
     .page-name {

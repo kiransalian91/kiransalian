@@ -16,10 +16,10 @@
         <div class="creative-text">Creative</div>
         <h1 class="wow fadeInRight header-label">WEBSITE DEVELOPER</h1>
         <p class="sub-label wow fadeIn" data-wow-delay="0.5s"> A mint of creativity</p>
-        <button type="button" class="btn btn-light get-in-touch wow fadeInUp" data-wow-delay="0.6s">GET IN
+        <button type="button" class="btn btn-light get-in-touch wow fadeInUp" data-wow-delay="0.6s" routerLink="/contact" >GET IN
           TOUCH</button>
       </div>
-      <div class="go-to">
+      <div class="go-to"  routerLink="/about">
         <img src="assets/images/down-arrow.png">
       </div>
     </div>
@@ -29,9 +29,9 @@
 
 
 
-  <app-about-us></app-about-us>
+  <!-- <app-about-us></app-about-us>
   <app-skills></app-skills>
   <app-services></app-services>
-  <app-contact-us></app-contact-us>
+  <app-contact-us></app-contact-us> -->
   <app-header *ngIf="showMenu"></app-header>
 </div>

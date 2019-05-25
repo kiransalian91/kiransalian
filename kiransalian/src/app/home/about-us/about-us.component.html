@@ -1,4 +1,11 @@
 <div class="about-me">
+  <div class="outer-menu" (click)="openMenu()" *ngIf="!showMenu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="close-icon" *ngIf="showMenu" (click)="openMenu()">
+  </div>
 
   <div class="left-heading">
 
@@ -12,8 +19,8 @@
 
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="name" >HELLO! I'M KIRAN SALIAN</h2>
-        <p class="mb-5 desc" >Worked several years for leading Web development house and has developed some of the top websites. currently working at Robosoft Technologies Pvt Ltd as Software Engineer.</p>
+        <h2 class="name wow fadeInUp" >HELLO! I'M KIRAN SALIAN</h2>
+        <p class="mb-5 desc wow fadeInUp" >Worked several years for leading Web development house and has developed some of the top websites. currently working at Robosoft Technologies Pvt Ltd as Software Engineer.</p>
       </div>
 
       <div  class="col-lg-4 col-12">
@@ -26,11 +33,11 @@
       <div class="col-lg-4 col-12">
         <div class=" mb-4 wow fadeInUp" >
           <h3 class="personal-info-label">Personal Info</h3>
-          <p class="personal-info clearfix"><span class="personal-info-title">Name</span><span class="personal-info-desc">Kiran R Salian</span></p>
-          <p class="personal-info clearfix"><span class="personal-info-title">Age</span><span class="personal-info-desc">27</span></p>
-          <p class="personal-info clearfix"><span class="personal-info-title">Address</span><span class="personal-info-desc">Udupi</span></p>
-          <p class="personal-info clearfix"><span class="personal-info-title">Phone</span><span class="personal-info-desc">+91 9880066931</span></p>
-          <p class="personal-info clearfix"><span class="personal-info-title">Email</span><span class="personal-info-desc">kiransalian91@gmail.com</span></p>
+          <p class="personal-info clearfix"><span class="personal-info-title">Name  </span><span class="personal-info-desc">Kiran R Salian</span></p>
+          <p class="personal-info clearfix"><span class="personal-info-title">Age  </span><span class="personal-info-desc">28</span></p>
+          <p class="personal-info clearfix"><span class="personal-info-title">Address  </span><span class="personal-info-desc">Udupi</span></p>
+          <p class="personal-info clearfix"><span class="personal-info-title">Phone  </span><span class="personal-info-desc">+91 9880066931</span></p>
+          <p class="personal-info clearfix"><span class="personal-info-title">Email  </span><span class="personal-info-desc">kiransalian91@gmail.com</span></p>
         </div>
       </div>
       <div class="col-lg-4 col-12">
@@ -46,5 +53,7 @@
     </div>
     <h2 class="page-name wow zoomIn" >ABOUT ME</h2>
   </div>
+
+  <app-header *ngIf="showMenu"></app-header>
  
 </div>

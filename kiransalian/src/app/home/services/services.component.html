@@ -1,5 +1,11 @@
 <div class="services">
-
+  <div class="outer-menu" (click)="openMenu()" *ngIf="!showMenu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="close-icon" *ngIf="showMenu" (click)="openMenu()">
+  </div>
   <div class="left-heading">
 
     <div class="section-number">#03</div>
@@ -18,13 +24,6 @@
     <div class="row services-infos">
       <div class="col-lg-4 service-col">
         <div class="service-box text-center wow fadeInUp">
-          <div class="service-icon"><i class="fab fa-earlybirds"></i></div>
-          <h3 class="service-heading">Graphic Design</h3>
-          <p class="service-desc">Basic knowledge of photoshop to design web pages</p>
-        </div>
-      </div>
-      <div class="col-lg-4 service-col">
-        <div class="service-box text-center wow fadeInUp">
           <div class="service-icon"><i class="far fa-file-code"></i></div>
           <h3 class="service-heading">Web Development</h3>
           <p class="service-desc">Fast and interactive. To deliver quality websites in limited period of time</p>
@@ -37,8 +36,15 @@
           <p class="service-desc">Experienced in Ionic framework to build hybrid mobile applications</p>
         </div>
       </div>
-
+      <div class="col-lg-4 service-col">
+        <div class="service-box text-center wow fadeInUp">
+          <div class="service-icon"><i class="fab fa-earlybirds"></i></div>
+          <h3 class="service-heading">Graphic Design</h3>
+          <p class="service-desc">Basic knowledge of photoshop to design web pages</p>
+        </div>
+      </div>
     </div>
     <h2 class="page-name wow zoomIn">ABOUT ME</h2>
   </div>
+  <app-header *ngIf="showMenu"></app-header>
 </div>

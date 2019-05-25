@@ -5,15 +5,15 @@
       <a class="navbar-brand " href="#header_banner" title="exalt logo">
         <img class="profile-image" src="assets/images/kiran5.jpg" alt="exalt">
         <span class="user-text">Kiran Salian</span>
-        <span class="user-tagline">professional web developer </span>
+        <span class="user-tagline">professional web developer</span>
       </a>
     </div><!-- navbar-header -->
       <ul class="menu">
-        <li [ngClass]="(activeLink == 'home')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink == 'home')?'active':''" title="Home" (click)="goToPage('home')">Home</span></li>
-        <li [ngClass]="(activeLink == 'aboutme')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'aboutme')?'active':''" title="About Me" (click)="goToPage('aboutme')">About Me</span></li>
-        <li [ngClass]="(activeLink == 'specialization')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'specialization') ?'active':''" title="Specialization" (click)="goToPage('specialization')">Specialization</span></li>
-        <li [ngClass]="(activeLink == 'services')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'services')? 'active':''" title="Services" (click)="goToPage('services')">Services</span></li>
-        <li [ngClass]="(activeLink == 'contact')?'activeli':''" class="menu-list"><span [ngClass]="(activeLink  == 'contact')?'active':''" title="Contact" (click)="goToPage('contact')">Contact</span></li>
+        <li [ngClass]="(activeLink == '/home')?'activeli':''" class="menu-list"><span routerLink="" [ngClass]="(activeLink == '/home')?'active':''" title="Home" (click)="goToPage('/home')">Home</span></li>
+        <li [ngClass]="(activeLink == '/about')?'activeli':''" class="menu-list"><span routerLink="/about" [ngClass]="(activeLink  == '/about')?'active':''" title="About Me" (click)="goToPage('/about')">About Me</span></li>
+        <li [ngClass]="(activeLink == '/skills')?'activeli':''" class="menu-list"><span routerLink="/skills" [ngClass]="(activeLink  == '/skills') ?'active':''" title="Specialization" (click)="goToPage('/skills')">Specialization</span></li>
+        <li [ngClass]="(activeLink == '/services')?'activeli':''" class="menu-list"><span routerLink="/services"  [ngClass]="(activeLink  == '/services')? 'active':''" title="Services" (click)="goToPage('/services')">Services</span></li>
+        <li [ngClass]="(activeLink == '/contact')?'activeli':''" class="menu-list"><span routerLink="/contact"  [ngClass]="(activeLink  == '/contact')?'active':''" title="Contact" (click)="goToPage('/contact')">Contact</span></li>
       </ul>
       
     <div class="footer">

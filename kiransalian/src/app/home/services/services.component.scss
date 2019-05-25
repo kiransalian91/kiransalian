@@ -4,6 +4,7 @@
 .services {
   background-color: $backgroundpink;
   display: flex;
+  min-height: 100%;
 
   @include media-breakpoint-down(sm) {
     display: block;

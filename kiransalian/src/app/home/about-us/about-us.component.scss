@@ -4,6 +4,7 @@
 .about-me {
   background-color: $backgroundBlue;
   display: flex;
+  min-height: 100%;
 
   @include media-breakpoint-down(sm) {
     display: block;
@@ -93,6 +94,7 @@
         padding-right: 10px;
         position: relative;
         display: block;
+        font-size: 14px;
       }
 
       .personal-info-title:after {
@@ -103,7 +105,7 @@
       }
 
       .personal-info-desc {
-        font-size: 14px;
+        font-size: 13px;
         padding-left: 100px;
         display: block;
       }

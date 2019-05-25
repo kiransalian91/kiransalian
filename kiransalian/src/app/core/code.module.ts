@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import {LoggerService  } from './services/logger.service';
-import { ScrollToModule } from 'ng2-scroll-to-el';
 @NgModule({
   declarations: [
 
@@ -11,14 +10,12 @@ import { ScrollToModule } from 'ng2-scroll-to-el';
   imports: [
   CommonModule,
   RouterModule,
-  HttpClientModule,
-  ScrollToModule
+  HttpClientModule
   ],
 
   exports: [
   RouterModule,
-  HttpClientModule,
-  ScrollToModule
+  HttpClientModule
   ],
 
   providers: [LoggerService]

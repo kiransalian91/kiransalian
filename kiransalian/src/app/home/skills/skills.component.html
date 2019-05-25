@@ -1,4 +1,11 @@
 <div class="skills">
+    <div class="outer-menu" (click)="openMenu()" *ngIf="!showMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="close-icon" *ngIf="showMenu" (click)="openMenu()">
+      </div>
   <div class="left-heading">
 
     <div class="section-number">#02</div>
@@ -39,28 +46,28 @@
 
         <div class="progress-info wow fadeInUp">
           <div class="progress-subject">
-            <p class="progress-label">Design</p>
+            <p class="progress-label">HTML5</p>
             <div class="progress">
               <div class="progress-bar active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
                 style="width:90%"></div>
             </div>
-            <p class="text-right mt-2">90%</p>
+            <p class="text-right mt-2">99%</p>
           </div>
           <div class="progress-subject">
-            <p class="progress-label">Development</p>
+            <p class="progress-label">JavaScript</p>
             <div class="progress">
               <div class="progress-bar active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                 style="width:75%"></div>
             </div>
-            <p class="text-right mt-2">80%</p>
+            <p class="text-right mt-2">90%</p>
           </div>
           <div class="progress-subject">
-            <p class="progress-label">Marketing</p>
+            <p class="progress-label">Angular 7</p>
             <div class="progress">
               <div class="progress-bar active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
                 style="width:50%"></div>
             </div>
-            <p class="text-right mt-2">50%</p>
+            <p class="text-right mt-2">90%</p>
           </div>
         </div>
 
@@ -68,4 +75,5 @@
     </div>
     <h2 class="page-name wow zoomIn">MY SKILLS</h2>
   </div>
+  <app-header *ngIf="showMenu"></app-header>
 </div>
