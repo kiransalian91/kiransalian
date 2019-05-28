@@ -53,6 +53,7 @@
       line-height: 36px;
       letter-spacing: 6px;
       margin: 10px 0 5px 0;
+
       @include media-breakpoint-down(xs) {
         font-size: 23px;
       }
@@ -75,7 +76,7 @@
       border-left: #a6a3d7 1px solid;
       padding-left: 24px;
       padding-top: 7px;
-      padding-bottom: 7px;
+      padding-bottom: 0px;
       margin-left: 7px;
       margin-bottom: 50px;
 
@@ -127,9 +128,11 @@
     .menu-list:before:hover {
       background: #ff9900;
     }
+
     .activeli:before {
       background: #ff9900 !important;
     }
+
     // .menu li:hover span,
     // .menu li.active span,
     // .footer-social ul li:hover span {
@@ -148,6 +151,16 @@
         margin-bottom: 20px;
         line-height: 14px;
         letter-spacing: normal;
+      }
+
+      .social-media {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+      }
+      .social-media:hover {
+        width: 18px;
+        height: 18px;
       }
     }
   }

@@ -1,12 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-// import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import 'rxjs/add/observable/of';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/code.module';
-// import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +11,6 @@ import { CoreModule } from './core/code.module';
   imports: [
     AppRoutingModule,
     CoreModule,
-    // ScrollToModule.forRoot(),
     // Add .withServerTransition() to support Universal rendering.
     // The application ID can be any identifier which is unique on
     // the page.
